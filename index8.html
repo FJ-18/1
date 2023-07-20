@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const timer = document.createElement("div");
+      timer.style.position = "fixed";
+      timer.style.left = "0";
+      timer.style.top = "0";
+      timer.style.backgroundColor = "white";
+      timer.style.padding = "10px";
+      document.body.appendChild(timer);
+
+      const button = document.createElement("button");
+      button.textContent = "Запустить таймер";
+      document.body.appendChild(button);
+
+      let intervalId;
+
+      button.addEventListener("click", () => {
+        let seconds = 20;
+        timer.textContent = `Осталось ${seconds} секунд`;
+        intervalId = setInterval(() => {
+          seconds--;
+          timer.textContent = `Осталось ${seconds} секунд`;
+          if (seconds === 0) {
+            clearInterval(intervalId);
+            timer.textContent = "Время вышло";
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
