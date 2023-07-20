@@ -4,137 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2</title>
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
       body {
+        width: 1200px;
+        height: 1200px;
+      }
+      .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
       }
-      .main {
-        margin-top: 30px;
-        position: relative;
-        max-width: 1600px;
-        margin-bottom: 400px;
-      }
-      .loginbutton {
-        background: #9bb784;
-        cursor: pointer;
-        padding: 10px;
-        margin: 10px 5px;
-        margin-bottom: 5px;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        display: inline;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        color: #ffffff;
-        position: relative;
-        left: 200px;
-      }
-
-      .login {
-        background: #aec59b;
-        font-size: 12px;
-        color: #f2f3f4;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-        padding: 5px;
-        margin: 30px auto;
-      }
     </style>
   </head>
   <body>
-    <!-- <div class="main">
-      <a href="index2.html"><div class="loginbutton">Вход</div></a>
-    </div> -->
-    <div class="login">
-      <div class="note">
-        <span>e-mail</span>
-        <input
-          class="val_m"
-          type="text"
-          maxlength="40"
-          id="logusername"
-          value=""
-          style="width: 270px"
-        />
-      </div>
-      <div class="note">
-        <span class="note-text">Пароль</span
-        ><input
-          class="val_m"
-          type="password"
-          maxlength="40"
-          id="logpassword"
-          value=""
-          style="margin-left: 3px; width: 270px"
-        />
-      </div>
-      <div style="padding: 10px; background: #ef9f9f; margin-bottom: 10px">
-        <form>
-          <div class="out-capcha">
-            <div class="out-capcha-title">
-              <span style="font-size: 12pt"
-                >Отметьте все <b>изображения с клавиатурами</b></span
-              >
-              <a
-                class="fa fa-refresh"
-                style="margin-left: 10px; color: #5d8aa8; font-size: 15pt"
-              ></a
-              ><span class="sr-only">Обновить изображения</span>
-            </div>
-
-            <label class="out-capcha-lab">
-              <input
-                type="checkbox"
-                value="19fb1e312100907ecf115bde862db89c"
-                class="out-capcha-inp"
-                name="capcha[]"
-              />
-              <div class="label-pel"></div>
-            </label>
-
-            <label class="out-capcha-lab">
-              <input
-                type="checkbox"
-                value="402208c80f9237a820c365550e398905"
-                class="out-capcha-inp"
-              />
-              <div class="label-pel"></div>
-            </label>
-
-            <label class="out-capcha-lab">
-              <input
-                type="checkbox"
-                value="f07f0a0549cefd45dcf11d8946837aa5"
-                class="out-capcha-inp"
-              />
-              <div class="label-pel"></div>
-            </label>
-
-            <label class="out-capcha-lab">
-              <input
-                type="checkbox"
-                value="fd53ffe676082a161b1b52f058ae289a"
-                class="out-capcha-inp"
-              />
-              <div class="label-pel"></div>
-            </label>
-
-            <label class="out-capcha-lab">
-              <input type="checkbox" value="c47859958b4027cc11f9d328876ce76f" />
-              <div class="label-pel"></div>
-            </label>
-          </div>
+    <div class="wrapper">
+      <div class="form">
+        <h2 class="form_log">Login</h2>
+        <form class="form">
+          UserName: <input class="text" type="text" name="UserName" /><br />
+          Password:
+          <input class="password" type="password" name="Password" /><br />
         </form>
+        <div class="">
+          <p>Отметьте все изображения с клавиатурами</p>
+          <input type="checkbox" value="19fb1e312100907ecf115bde862db89c" />
+          <input type="checkbox" value="402208c80f9237a820c365550e398905" />
+          <input type="checkbox" value="f07f0a0549cefd45dcf11d8946837aa5" />
+          <input type="checkbox" value="fd53ffe676082a161b1b52f058ae289a" />
+          <input type="checkbox" value="c47859958b4027cc11f9d328876ce76f" />
+        </div>
+        <a href="index3.html">Вход</a>
       </div>
-      <a href="index3.html">Вход</a>
     </div>
   </body>
 </html>
